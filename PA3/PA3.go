@@ -15,7 +15,7 @@ func check(e error) {
 }
 
 func main() {
-	conn, errc := net.Dial("tcp", "140.112.41.208:12000")
+	conn, errc := net.Dial("tcp", "140.112.41.208:12002")
 	check(errc)
 	defer conn.Close()
 

@@ -1,23 +1,25 @@
 package main
 
-import "fmt"
-import "os"
-import "bufio"
+import (
+	"bufio"
+	"fmt"
+	"os"
+)
 
 func check(e error) {
-  if e != nil {
-    panic(e)
-  }
+	if e != nil {
+		panic(e)
+	}
 }
 
 func main() {
-  f, err := os.Open("hello-world.go")
-  check(err)
-  
-  scanner := bufio.NewScanner(f)
-  for scanner.Scan() {
-    fmt.Println(scanner.Text())
-  }
+	f, err := os.Open("hello-world.go")
+	check(err)
 
-  f.Close()
+	scanner := bufio.NewScanner(f)
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
+
+	f.Close()
 }
