@@ -25,4 +25,3 @@
 | 14   | 05/20 | Network Layer: Routing principles, Internet Routing | PA#9 due 05/24, 18:00:00 |
 | 15   | 05/27 | Network Layer: Internet Routing, Link Layer and MAC | |
 | 16   | 06/03 | **Exam #3 (No class on 06/03; Exam on 06/04)** | |
-
