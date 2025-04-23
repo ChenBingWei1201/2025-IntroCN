@@ -1,11 +1,11 @@
 package main
 
 import (
-	"fmt"
 	"bufio"
-	"os"
-	"net"
+	"fmt"
 	"io"
+	"net"
+	"os"
 )
 
 func check(e error) {
@@ -39,7 +39,7 @@ func main() {
 	_, errCopy := io.Copy(writer, input)
 	check(errCopy)
 	writer.Flush()
-	
+
 	scanner := bufio.NewScanner(conn)
 	if scanner.Scan() {
 		fmt.Printf("Send the file size first: %d\n", fileSize)
